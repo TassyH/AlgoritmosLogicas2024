@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class QuintoExercicioDaLista {
+
+	public static void main(String[] args) {
+
+		Scanner teclado = new Scanner(System.in);
+		System.out.println("Entre com o valor de peso");
+		double peso = teclado.nextDouble();
+		System.out.println("Entre com a altura");
+		double altura = teclado.nextDouble();
+		altura*altura;
+		double imc = peso/altura;
+		
+		System.out.println("imc: "+imc);
+	}
+
+}

@@ -1,0 +1,14 @@
+
+public class NovaClasse {
+
+	public static void main(String[] args) {
+
+		double baseMaior = 10;
+		double altura = 5;
+	    double baseMenor = 10;
+		double area = (baseMaior+baseMenor)*altura/2;
+		System.out.println("area: "+area);
+		
+	}
+
+}

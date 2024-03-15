@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class OitavoExercicioDaLista {
+
+	public static void main(String[] args) {
+
+		Scanner teclado = new Scanner (System.in);
+		System.out.println("Informe o primeiro valor");
+		double valorUm = teclado.nextDouble();
+		System.out.println("Informe o segundo valor");
+		double valorDois = teclado.nextDouble();
+		
+		double soma = valorUm+valorDois;
+		double subtracao;
+		double divisao;
+		double multiplicacao;
+		
+	}
+
+}
