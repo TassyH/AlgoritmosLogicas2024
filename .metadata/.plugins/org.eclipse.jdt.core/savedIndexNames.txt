@@ -1,5 +1,4 @@
 INDEX VERSION 1.134+C:\Users\tassy.7214\Desktop\ProjetosAlgoritmos\.metadata\.plugins\org.eclipse.jdt.core
 1241198385.index
-2410367904.index
 1865797976.index
 3578409771.index

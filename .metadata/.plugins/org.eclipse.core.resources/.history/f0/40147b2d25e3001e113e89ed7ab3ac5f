@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class Exercicio15 {
+
+	public static void main(String[] args) {
+		Scanner teclado = new Scanner(System.in);
+	        
+	        
+		System.out.println("Entre com valor de depósito: ");
+	    double deposito = teclado.nextDouble();
+	    double segundoDeposito = 303.20;
+	    double acrescimo = 0.0056;
+	    double rendimento = acrescimo*deposito;
+	    double rendimentoMensal;
+	    
+	    for(int i = 1; i<5; i++) {
+	    	rendimentoMensal = i*rendimento;
+			System.out.println(rendimentoMensal);
+
+	    }
+	    
+
+	}
+
+}

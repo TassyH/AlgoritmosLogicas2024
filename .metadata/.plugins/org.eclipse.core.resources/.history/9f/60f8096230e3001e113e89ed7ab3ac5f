@@ -1,0 +1,30 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class Exercicio15 {
+
+	public static void main(String[] args) {
+		Scanner teclado = new Scanner(System.in);
+	        
+	        
+		System.out.println("Entre com valor de depósito: ");
+	    double deposito = teclado.nextDouble();
+	    double segundoDeposito = 303.20;
+	    double acrescimo = 0.0056;
+	    double rendimento = acrescimo*deposito;
+	    double rendimentoMensal;
+	    ArrayList <Integer> mes = new ArrayList<Integer>();
+	    int [] mesLista =  {1,2,3,4,5};
+	    
+	    for(int i = 1; i<mesLista.length; i++) {
+	    	rendimentoMensal = (i*rendimento)+deposito;
+	    	mesLista [2]= (int) (rendimentoMensal+303.20);
+			System.out.println(rendimentoMensal);
+			System.out.println(mesLista[2]);
+
+	    }
+	    
+
+	}
+
+}
