@@ -48,10 +48,11 @@ public class Exercicio15melhorado {
             case 4:
                 System.out.println("Sua conta tem um rendimento mensal de 0,56%");
                 for (int i = 1; i<=5; i++){
-                    double rendimennto;
+                    double rendimento;
                     rendimentoMensal = saldo*juros;
-                    rendimennto = rendimentoMensal +i;
-                    System.out.println(rendimennto);
+                    rendimento = rendimentoMensal *i;
+                    double novoSaldo = (rendimento + saldo);
+                    System.out.println(novoSaldo);
     
                 }
                 
