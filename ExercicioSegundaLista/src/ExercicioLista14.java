@@ -11,6 +11,10 @@ public class ExercicioLista14 {
 		Scanner teclado = new Scanner (System.in);
 		System.out.println("Entre com o seu salário");
 		double salario = teclado.nextDouble();
+		
+		if(salario <= 1800) {
+			System.out.println("Entre com o seu salário");
+		}
 
 	}
 
