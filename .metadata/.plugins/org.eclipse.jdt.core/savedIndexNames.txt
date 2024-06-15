@@ -9,3 +9,4 @@ INDEX VERSION 1.134+C:\Users\tassy.7214\Desktop\ProjetosAlgoritmos\.metadata\.pl
 154554170.index
 2037269942.index
 993825835.index
+3578409771.index
