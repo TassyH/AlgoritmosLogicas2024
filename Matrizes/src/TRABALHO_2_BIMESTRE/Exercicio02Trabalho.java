@@ -14,9 +14,11 @@ public class Exercicio02Trabalho {
 		 * Imprimir arrays Imprime todos os valores do array. 3 – Verificar se o número
 		 * existe Usuário deve digitar um número e o programa retorna se o número existe
 		 * ou não. 4 – Buscar por posição Usuário deve digitar uma posição e o programa
-		 * retorna o valor daquela posição. 5 – Verificar anterior Usuário informa uma
-		 * posição e o programa retorna o valor da posição anterior. 6 – Verificar
-		 * posterior Usuário informa uma posição e o programa retorna o valor da posição
+		 * retorna o valor daquela posição.
+		 *  5 – Verificar anterior 
+		 *  Usuário informa uma posição e o programa retorna o valor da posição anterior. 
+		 *  6 – Verificar posterior 
+		 *  Usuário informa uma posição e o programa retorna o valor da posição
 		 * posterior. 7 – Somar array Retorna a soma de todos os valores do array. 8 –
 		 * Eliminar os ímpares Programa deve buscar todos os números ímpares do array e
 		 * substituir pelo próximo par
@@ -35,6 +37,7 @@ public class Exercicio02Trabalho {
 			System.out.println("opçao 3 - verificar se o numero existe");
 			System.out.println("opcao 4 - buscar por posição");
 			System.out.println("opcao 5 - verificar o anterior");
+			System.out.println("***********************************");
 
 			int opcao = leitor.nextInt();
 
@@ -47,38 +50,41 @@ public class Exercicio02Trabalho {
 
 			} else if (opcao == 2) {
 				for (int i = 0; i < arrayMontado.length; i++) {
-					System.out.println(arrayMontado[i] + " ");
+					System.out.print(arrayMontado[i] + " ");
 				}
+				System.out.println("");
 			} else if (opcao == 3) {
 				boolean existe;
-				boolean naoExiste;
 				System.out.println("Entre com o numero que deseja verificar se existe");
 				int existeNum = leitor.nextInt();
 
 				for (int i = 0; i < arrayMontado.length; i++) {
 					if (arrayMontado[i] == existeNum) {
 						existe = true;
+						System.out.println("existe");
 					} else {
-						naoExiste = true;
+						existe = false;
+						System.out.println("nao existe");
+
 					}
-				}
-				if(existe = true) {
-					System.out.println("existe");
-				}else if (naoExiste = true){
-					System.out.println("nao existe");
 				}
 			}else if(opcao == 4) {
 				System.out.println("Entre com a posiçao do numero que deseja procurar");
 				int buscaNum = leitor.nextInt();
 				
+		
+				System.out.println("A posição que vc digitou tem esse numero: "+arrayMontado[buscaNum]);
+
+		   }else if (opcao==5) {
+			   System.out.println("Entre com a posiçao do numero que deseja descobrir o antecessor");
+				int buscaNumAnterior = leitor.nextInt();
+				
 				for (int i = 0; i < arrayMontado.length; i++) {
-					if (arrayMontado[i] != buscaNum) {
+					if (arrayMontado[i] == buscaNumAnterior) {
+						System.out.println("sr. hihi");
 					}
 			}
-				System.out.println(arrayMontado[buscaNum]);
-
-
-		}
+		   }
 
 	}
 	}
