@@ -13,22 +13,32 @@ public class ExercicioXP {
 //			● Para cada número ímpar, substituir com o próximo número par.
 //			● Imprimir o array (os números devem estar em uma única linha)
 		
-        int [] vetor = new int [10];
-		int vetorImpar = 0;
-		for (int i = 1; i < vetor.length; i++) {
-			vetor[i] = new Random().nextInt(31);
-			System.out.print(" "+vetor[i]);
-			
-//			if(vetor[i]%i!=0) {
-//				for(int a = 1; a < vetor[i]; a++ ) {
-//					vetorImpar = vetor[i]+1;
-//					System.out.print(" "+vetor[i]);
-//				}
-//			}
-			
-			}
-		}
+		 // Criando um array com 10 posições
+        int[] array = new int[10];
+        Random random = new Random();
+
+
+        System.out.print("Array original: ");
+        for (int i = 0; i < array.length; i++) {
+            array[i] = random.nextInt(20);
+            System.out.print(" "+array[i]);
+
+        }
+
+        System.out.println();
+
+        System.out.print("Array de impares que viraram par: ");
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] % 2 != 0 ) {
+               array[i] = array[i] + 1;
+               System.out.print(" "+array[i]);
+
+                }
+                
+        }
 		
+	}
+	
 	}
 
 
